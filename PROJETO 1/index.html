@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--  LINK DO CSS -->
+    <link rel="stylesheet" href="./style.css"/>
+
+
+    <!-- LINK DO SWIPER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <title>Avanti</title>
+</head>
+<body>
+    <main>
+
+        <header>
+            <p>Ganhe <span class="topHeader">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10</p>
+            <div class="headerLogo">
+                 <div class="part1Header">
+                    <div class="headerMobile3items">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list menuHamburguerMobile" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+
+                        <img id="logoHeader" src="./img/avanti-logo-black.png" alt="Logo avanti">
+                        <img src="./img/carrinho-compras.png" class="carComprasMobile" width="50px" alt="">
+                    </div>
+
+                    <div class="lupaPesquisar">
+                        <input 
+                        type="text"
+                        placeholder="Digite aqui o que você procura"
+                        id="inputSearch"
+                        />
+                        <button id="btnLupa">
+                            <img src="img/lupa.png" alt="pesquisar">
+                        </button>
+                    </div>
+                 </div>
+
+                <div class="part2Header">
+                    <img src="./img/imgUserBlue.png">
+                    <p>Olá,<br> Nome cliente</p>
+
+                    <img src="./img/carrinho-compras.png" alt="">
+                </div>
+            </div>
+
+            <div id="resultSearch" class="containerLimitado">
+            </div>
+
+            <nav class="containerLimitado navHeader">
+                <div id="menuHamburgue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    <p>Todas as Categorias</p>
+                </div>
+
+                <a href="#" id="hoverDepartment">Departamento</a>
+                <a href="#">Departamento</a>
+                <a href="#">Departamento</a>
+                <a href="#">Departamento</a>
+                <a href="#">Departamento</a>
+                <a href="#">Departamento</a>
+                <a href="#">Departamento</a>
+                <a href="#">Departamento</a>
+            </nav>
+            
+            <!-- CONTEÚDO ESCONDIDO - TODAS AS CATEGORIAS  -->
+            <div id="divSecondAllCategories" class="dNone">
+                <div class="divMainAllCategories">
+                    
+                    <div class="divCategories">
+                        <div class="divCat1">
+    
+                            <div class="childCategories textBoldBlue">
+                                <p>Departamento</p>
+                                <svg width="8" height="12" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+    
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+    
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+    
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+    
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+                            
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+
+                            <div class="childCategories">
+                                <p>Departamento</p>
+                                <svg width="7" height="11" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" fill="#005CFF"/>
+                                </svg> 
+                            </div>
+                        </div>
+
+                       <div class="divMainTwoComponents">
+                            <div class="divCategory2">
+                                <div class="divCat2">
+                                    <p class="textBoldBlue">Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                </div>
+                                <div class="divCat3">
+                                    <p class="textBoldBlue">Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                </div>
+                                <div class="divCat4">
+                                    <p class="textBoldBlue">Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                    <p>Categoria</p>
+                                </div>
+                            </div>
+
+                            <div class="divImgCategories">
+                                <div class="subDivImg">
+                                    <p>Confira os Produtos <span class="textBold">Que acabaram De chegar</span></p>
+                                    <button>Ver mais</button>
+                                </div>
+                        
+                                <img class="imgAllCategories" src="./img/xicaraAllCategories.png">
+                            </div>
+                       </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <!-- CONTEÚDO ESCONDIDO - DEPARTAMENTO[0]    -->
+             <div id="divDepartments" class="dNone containerLimitado">
+                <p class="titleDepartment textBold">Departamento</p>
+
+                <div class="divMainDepartment">
+                    <div class="divChildDepartment">
+                        <div>
+                            <p class="textBoldBlue">Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                        </div>
+
+                        <div>
+                            <p class="textBoldBlue">Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                        </div>
+                        
+                        <div>
+                            <p class="textBoldBlue">Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="divImgCategories">
+                        <div class="subDivImg">
+                            <p>Confira os Produtos <span class="textBold">Que acabaram De chegar</span></p>
+                            <button>Ver mais</button>
+                        </div>
+                
+                        <img class="imgAllCategories" src="./img/xicaraAllCategories.png">
+                    </div>
+                </div>
+             </div>
+        </header>
+        
+        <section class="section1">
+            <div class="containerLimitado section1-1">
+                <img class="imgSection1" src="./img/newCadeira1.png" alt="imagem de cadeira">
+
+                <div class="textSection1">
+                     <h1><span style="font-weight: bold;">SUPER</span><wbr>SALE</wbr></h1>
+                     <p class="dNone textMobileScreen">SELECTED ITEMS UP TO</p>
+                     <p class="afterh1 textFullScreen">ITENS SELECIONADOS COM ATÉ</p>
+                     <p class="afterAfterh1">50%OFF</p>
+                </div>
+
+                <div id="renderPositionSlides" class="dNone"></div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="section2-1">
+                <h3>Lançamentos</h3>
+                <a href="#">Ver mais</a>
+            </div>
+            
+            <div class="cardProduct">  <!-- OS CARDS ESTÃO SENDO RENDERIZADOS COM JAVASCRIPT   -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+        
+                      <div class="swiper-slide">
+                        <div class="containerSwiper1 d-flexCarousel"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="containerSwiper2 d-flexCarousel">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="containerSwiper3 d-flexCarousel">
+                        </div>
+                      </div>
+        
+                    </div>
+        
+                    <div id="swiper-button-prev" class="swiper-button-prev"></div>
+                    <div id="swiper-button-next" class="swiper-button-next"></div>
+                    <div id="swiper-pagination" class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">   
+            <div class="backgroundCup1">
+                <img src="./img/xicara1.png" alt="">  <!---->
+            </div>
+
+            <div class="backgroundText1">
+                <h2>LOREM IPSUM</h2>
+                
+                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+
+                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue</p>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class=" section4Main">
+                <div class="section4Text">
+                    <h2>LOREM IPSUM</h2>
+    
+                    <div class="section4Child">
+                        <div class="imgMap">
+                            <img src="./img/iconeMAP.png" alt="">  <!-- img point DE MAPA -->
+                        </div>
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+    
+                    <div class="section4Child">
+                        <div class="imgMap">
+                            <img src="./img/iconeMAP.png" alt="">  <!-- img point DE MAPA -->
+                        </div>
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+                    
+                    <div class="section4Child">
+                        <div class="imgMap">
+                            <img src="./img/iconeMAP.png" alt="">  <!-- img point DE MAPA -->
+                        </div>
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+                </div>
+    
+                <div class="section4Img">
+                    <img src="./img/xicara2.png" alt=""> <!-- img OUTRA CANECA AVANTI -->
+                </div>
+            </div>
+           
+        </section>
+
+
+        <section class="section3 section5Int">   
+            <div class="backgroundCup1">
+                <img src="./img/xicara1.png" alt="">  <!---->
+            </div>
+
+            <div class="backgroundText1">
+                <h2>LOREM IPSUM</h2>
+                
+                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+
+                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue</p>
+            </div>
+        </section>
+
+        <section class="section2 fileiraCards2">
+            <div class="section2-1">
+                <h3>Lançamentos</h3>
+                <a href="#">Ver mais</a>
+            </div>
+            
+            <div class="cardProduct">  <!-- OS CARDS ESTÃO SENDO RENDERIZADOS COM JAVASCRIPT   -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+        
+                      <div class="swiper-slide">
+                        <div class="containerSwiper1-2 d-flexCarousel"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="containerSwiper2-2 d-flexCarousel">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="containerSwiper3-2 d-flexCarousel">
+                        </div>
+                      </div>
+        
+                    </div>
+        
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section6">
+            <p class="pSection6">Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+        </section>
+
+
+        <section class="section7 containerLimitado">
+            <p class="titleNewsLetter">Cadastre-se na nossa <span style="color: #005cff">newsletter</span></p>
+
+            <form class="formNewsLetter">
+                <input class="inputNewsLetter" type="text" placeholder="Digite seu nome">
+                <input class="inputNewsLetter" type="text"  placeholder="Digite seu e-mail">
+
+                <div class="boxPoliticaPrivacidade">
+                    <input type="checkbox" id="politicaPrivacidade">
+                    <label for="politicaPrivacidade">Estou de acordo com a <a href="">Política de Privacidade</a></label>
+                </div>
+                
+                <button class="btnNewsLetter" type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+
+        <section class="section8">
+            <div class="section8Main">
+                <div class="section8Child onlyLogos">
+                    <img class="logoAvantiBottom" src="./img/avanti-logo-black.png" alt="Logo da Avanti">
+    
+                    <div class="logosSocialMedia">
+                        <img class="logoInstagram" src="./img/logoIntagram.png" alt="Link para Instagram">
+                        <img class="logoFacebook" src="./img/logoFacebook.png" alt="Link para Facebook">
+                        <img class="logoYoutube" src="./img/logoYoutube.png" alt="Link para Youtube">
+                        <img class="logoTiktok" src="./img/logoTiktok.png" alt="Link para TikTok">
+                    </div>
+                </div>
+
+                <div class="section8Child textSection8">
+                    <h4>Institucional</h4>
+                    <svg class="dNone" width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z" fill="#005CFF"/></svg>
+                    </svg>
+
+                    <p>Sobre nós</p>
+                    <p>Nossas Lojas</p>
+                    <p>Privacidade e Segurança</p>
+                    <p>Termos e Condições</p>
+                </div>
+                <div class="section8Child textSection8">
+                    <h4>Central de ajuda</h4>
+                    <svg class="dNone" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z" fill="#005CFF"/></svg>
+                    </svg>
+
+                    <p>Fale Conosco</p>
+                    <p>Frete e Entrega</p>
+                    <p>Trocas e Devoluções</p>
+                    <p>Formas de Pagamento</p>
+                    <p>FAQ</p>
+                </div>
+                <div class="section8Child textSection8 lastTextSection8">
+                    <h4>Atendimento</h4>
+                    <svg class="dNone" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z" fill="#005CFF"/></svg>
+                    </svg>
+
+                    <p><span class="textBold">Telefone:</span>(00) 1234-5678</p>
+                    <p><span class="textBold">E-mail:</span>exemplo@email.com</p>
+                    <p><span class="textBold">Horário de atendimento:</span></p>
+
+                    <p>Segunda a Sábado: 07h00 às 23h00</p>
+                    <p>Domingos e Feriados: 07h00 às 21h00</p>
+                </div>
+            </div>
+
+            <div class="flagCards containerLimitado">
+                <img class="flagAmex" src="./img/cartaoAmex.png" alt="Cartão Amex">  
+                <img class="flagMaster" src="./img/cartaoMasterCard.png" alt="Cartão MasterCards">  
+                <img class="flagVisa" src="./img/cartaoVisa.png" alt="Cartão Visa">
+                <img class="flagHiper" src="./img/cartaoHiperCard.png" alt="Cartão HiperCard">
+                <img class="flagElo" src="./img/cartaoELO.png" alt="Cartão ELO"> 
+                <img class="flagOther" src="./img/cartaoDiferente1.png" alt="Outra forma de pagamento"> 
+                <img class="flagPaypal" src="./img/cartaoPayPal.png" alt="Pagamento via PayPal"> 
+                <img class="flagPix" src="./img/cartaoPIX.png" alt="Pagamento por PIX">
+                <img class="flagBoleto" src="./img/cartaoBoleto.png" alt="Pagamento via Boleto"> 
+            </div>
+        </section>
+
+
+        <footer class="section9">
+            <p class="textComputer">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+            <p class="textMobile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+
+            <div class="imgsFooter">
+                <img class="imgFooter1" src="./img/imgFooter1.png" alt="Patrocinador 1"> 
+                <img class="imgFooter2" src="img/imgFooter2.png" alt="Patrocinador 2">
+                <img class="imgFooter3" src="./img/imgFooter3.png" alt="Patrocinador 3">
+                <img class="imgFooter4" src="./img/imgFooter4.png" alt="Patrocinador 4">
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

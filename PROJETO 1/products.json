@@ -1,0 +1,9 @@
+{
+    "Products": [
+        {"id": 1, "name": "<h3> Lorem ipsum dolor sit amet consectetuer adipiscing elit </h3> ", "price": "100,00", "image": "./img/fotoProduto.png"},
+        {"id": 2, "name": "<h3> Lorem ipsum dolor sit amet consectetuer adipiscing elit </h3> ", "price": "100,00", "image": "./img/fotoProduto.png"},
+        {"id": 3, "name": "<h3> Lorem ipsum dolor sit amet consectetuer adipiscing elit </h3> ", "price": "100,00", "image": "./img/fotoProduto.png"},
+        {"id": 4, "name": "<h3> Lorem ipsum dolor sit amet consectetuer adipiscing elit </h3> ", "price": "100,00", "image": "./img/fotoProduto.png"},
+        {"id": 5, "name": "<h3> Lorem ipsum dolor sit amet consectetuer adipiscing elit </h3> ", "price": "100,00", "image": "./img/fotoProduto.png"}
+    ]
+}
