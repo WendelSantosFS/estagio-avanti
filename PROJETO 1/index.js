@@ -1,3 +1,40 @@
+const hoverAllCategories = document.getElementById("menuHamburgue")
+hoverAllCategories.addEventListener('mouseover', () =>{
+   document.getElementById('divSecondAllCategories').classList.toggle('dNone')
+})
+hoverAllCategories.addEventListener('mouseout', () =>{
+    document.getElementById('divSecondAllCategories').classList.toggle('dNone')
+ })
+
+
+const hoverAllDepartments = document.getElementById("hoverDepartment")
+hoverAllDepartments.addEventListener('mouseover', () => {
+   document.getElementById('divDepartments').classList.toggle('dNone')
+})
+hoverAllDepartments.addEventListener('mouseout', () =>{
+    document.getElementById('divDepartments').classList.toggle('dNone')
+})
+
+
+
+const accordionBotton1 = document.querySelector('.accordionText1')
+accordionBotton1.addEventListener('click', () => {
+    const ptextSection8 = document.querySelector('.textAccordion1')
+    ptextSection8.classList.toggle('dNone')
+})
+const accordionBotton2 = document.querySelector('.accordionText2')
+accordionBotton2.addEventListener('click', () => {
+    const ptextSection8 = document.querySelector('.textAccordion2')
+    ptextSection8.classList.toggle('dNone')
+})
+const accordionBotton3 = document.querySelector('.accordionText3')
+accordionBotton3.addEventListener('click', () => {
+    const ptextSection8 = document.querySelector('.textAccordion3')
+    ptextSection8.classList.toggle('dNone')
+})
+
+
+
 const fileiraCard1 = document.querySelector(".containerSwiper1")
 const fileiraCard1_2 = document.querySelector(".containerSwiper1-2")
 
@@ -96,22 +133,7 @@ async function renderNav() {
 renderNav()
 
 
-const hoverAllCategories = document.getElementById("menuHamburgue")
-hoverAllCategories.addEventListener('mouseover', () =>{
-   document.getElementById('divSecondAllCategories').classList.toggle('dNone')
-})
-hoverAllCategories.addEventListener('mouseout', () =>{
-    document.getElementById('divSecondAllCategories').classList.toggle('dNone')
- })
 
-
-const hoverAllDepartments = document.getElementById("hoverDepartment")
-hoverAllDepartments.addEventListener('mouseover', () => {
-   document.getElementById('divDepartments').classList.toggle('dNone')
-})
-hoverAllDepartments.addEventListener('mouseout', () =>{
-    document.getElementById('divDepartments').classList.toggle('dNone')
-})
 
 
 const resultSearch = document.getElementById('resultSearch')

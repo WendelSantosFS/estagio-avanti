@@ -835,6 +835,16 @@ nav a:hover {
         align-items: center;
         flex-wrap: wrap;
     }
+
+    .section8Child p {
+        display: block;
+    }
+
+    .textAccordion1,
+    .textAccordion2,
+    .textAccordion3 {
+        display: block;
+    }
 }
 @media (max-width: 426px) {
     .pSection6 {
@@ -916,25 +926,24 @@ nav a:hover {
         gap: 3rem;
     }
     .textSection8 {
-        color: #000;
         font-weight: bold;
-        font-size: 18px;
         border-top: 1px solid #DDDDDD;
         width: 100%;
-        padding: 10px;
         
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: space-between;
+    }
+    .textSection8 h4 {
+        color: #000;
+        font-size: 18px;
     }
     .textSection8 svg {
         display: block;
     }
     .lastTextSection8 {
         border-bottom: 1px solid #DDDDDD;
-    }
-    .section8Child p {
-        display: none;
     }
 
     .textComputer {
@@ -981,6 +990,22 @@ nav a:hover {
         display: none;
     }
     .cardProduct {
+        margin-left: 1rem;
+    }
+
+
+    .divAccordion {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        cursor: pointer;
+        padding: 10px;
+    }
+    .textAccordion1,
+    .textAccordion2,
+    .textAccordion3 {
         margin-left: 1rem;
     }
 }
