@@ -177,3 +177,12 @@ function renderPointers () {
     positionSlidesSection1.append(pointer1, pointer2, pointer3)
 }
 renderPointers()
+
+
+const menuMobile = document.querySelector(".menuHamburguerMobile")
+menuMobile.addEventListener('mouseover', () => {
+    document.querySelector(".menuMobile").classList.toggle('dNone')
+})
+menuMobile.addEventListener('mouseout', () => {
+    document.querySelector(".menuMobile").classList.toggle('dNone')
+})
