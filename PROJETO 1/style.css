@@ -5,9 +5,20 @@
     font-family: "Nunito", sans-serif ;
 }
 
+:root {
+    --swiper-theme-color: #303030;
+}
+
 .textBoldBlue {
     font-weight: 700;
     color: #005cff;
+}
+.textBoldBlack {
+    font-weight: bold;
+    color: #000;
+}
+.textBold { 
+    font-weight: bold;
 }
 .dNone {
     display: none;
@@ -62,12 +73,20 @@ header > p {
 .headerLogo input[type='text'] {
     width: 400px;
     height: 35px;
+    font-size: 14px;
+    font-weight: 600;
     padding: .5rem;
     border-radius: .6rem 0rem 0rem .6rem;
     border: 1px solid #808080;
 }
+.headerLogo input[type='text']::placeholder {
+    color: #000;
+}
 .lupaPesquisar {
     display: flex;
+}
+.lupaPesquisar input[type="text"] {
+    border-right: none;
 }
 #btnLupa  {
     width: 35px;
@@ -111,9 +130,32 @@ header > p {
     font-weight: bold;
     line-height: 13px;
 }
+.carrinhoCompras {
+    display: flex;
+    position: relative;
+}
+#imgCarrinhoCompras {
+    width: 30px;
+    height: 30px;
+}
+.notificationCar {
+    position: absolute;
+    left: 21px;
+    top: -5px;
+    background-color: #005CFF;
+    color: #fff;
+
+    font-weight: 700;
+    text-align: center;
+    align-content: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+}
 
 #menuHamburgue {
     display: flex;
+    gap: 3px;
     align-items: end;
     font-weight: bold;
 }   
@@ -406,46 +448,8 @@ nav a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
-.flagAmex {
-    width: 27px;
-    height: 19px;
-}
-.flagMaster {
-    width: 26px;
-    height: 16px;
-}
-.flagVisa {
-    width: 33px;
-    height: 10px;
-}
-.flagHiper {
-    width: 35px;
-    height: 15px;
-}
-.flagElo {
-    width: 33px;
-    height: 13px;
-}
-.flagOther {
-    width: 30px;
-    height: 18px;
-}
-.flagPaypal {
-    width: 33px;
-    height: 9px;
-}
-.flagPix {
-    width: 24px;
-    height: 23px;
-}
-.flagBoleto {
-    width: 36px;
-    height: 24px;
-}
-
-
 
 .section9 {
     margin: 50px auto;
@@ -490,14 +494,6 @@ nav a:hover {
 
 
 /*   CÓDIGO DOS CARDS EM JAVASCRIPT    */
-.textBoldBlack {
-    font-weight: bold;
-    color: #000;
-}
-.textBold { 
-    font-weight: bold;
-}
-
 .cardProduct {
     display: flex;
     align-items: center;
@@ -517,9 +513,53 @@ nav a:hover {
     justify-content: center;
     gap: .75rem;
 }
+#mySwiper, #mySwiper2 {
+    height: 400px;
+}
+#swiper-button-prev1::after,
+#swiper-button-prev2::after,
+#swiper-button-next1::after,
+#swiper-button-next2::after {
+    font-family: 'bootstrap-icons';
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: -30px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #005CFF;
+    transition: all .4s ease;
+}
+#swiper-button-prev1:hover::after,
+#swiper-button-prev2:hover::after,
+#swiper-button-next1:hover::after,
+#swiper-button-next2:hover::after {
+    background-color: #005CFF;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#swiper-button-prev1::after,
+#swiper-button-prev2::after {
+    content: '\F12C';
+    left: -10px;
+}
+#swiper-button-next1::after,
+#swiper-button-next2::after {
+    content: '\F135';
+    right: -10px;
+}
 
-
+/* SWIPER ACTIVE */
+.swiper-pagination-bullet-active {
+    background-color: #303030 !important;
+}
 
 
 
@@ -664,7 +704,13 @@ nav a:hover {
 .childCategories {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    justify-content: space-between;
+    color: #303030;
+    width: 180px;
+}
+.pDepartment {
+    font-size: 17px;
+    font-weight: 400;
 }
 
 #divDepartments {
@@ -674,7 +720,7 @@ nav a:hover {
 
 .divMainTwoComponents {
     display: flex;
-    gap: 13.2rem;
+    gap: 12.3rem;
 }
 
 .divImgCategories {
@@ -727,7 +773,7 @@ nav a:hover {
 .divChildDepartment {
     margin-top: 0.5rem;
     display: flex;
-    gap: 4rem;
+    gap: 6rem;
     color: #656565;
     font-size: 14px;
     line-height: 27px;
@@ -754,6 +800,9 @@ nav a:hover {
     display: none;
 }
 
+.notificationCarMobile {
+    display: none;
+}
 
 
 
@@ -879,6 +928,14 @@ nav a:hover {
     }
 }
 @media (max-width: 426px) {
+    .section2-1 {
+        margin: 0 6px;
+    }
+    .section2-1 a {
+        text-decoration: underline;
+        color: #303030;
+        font-weight: 700;
+    }
     .pSection6 {
         text-align: center;
     }
@@ -898,9 +955,29 @@ nav a:hover {
     .headerLogo {
         display: initial;
     }
+    .compraMobile {
+        display: flex;
+        position: relative;
+    }
     .carComprasMobile {
         width: 40px;
         height: 40px;
+    }
+    .notificationCarMobile {
+        display: block;
+        background-color: #005CFF;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        font-weight: 400;
+        font-size: 12px;
+        border-radius: 50%;
+        text-align: center;
+        align-content: center;
+
+        position: absolute;
+        left: 27px;
+        top: -3px;
     }
     .lupaPesquisar {
         width: 90%;
@@ -973,6 +1050,7 @@ nav a:hover {
     }
     .textSection8 svg {
         display: block;
+        color: #000;
     }
     .lastTextSection8 {
         border-bottom: 1px solid #DDDDDD;
@@ -983,6 +1061,7 @@ nav a:hover {
     }
     .textMobile {
         display: block;
+        padding: 0 14px;
     }
     .imgsFooter {
         width: 100%;
@@ -1016,8 +1095,8 @@ nav a:hover {
         font-size: 17px;
     }
 
-    #swiper-button-prev,
-    #swiper-button-next
+    #swiper-button-prev1,
+    #swiper-button-next1
      {
         display: none;
     }
@@ -1033,11 +1112,19 @@ nav a:hover {
         justify-content: space-between;
 
         cursor: pointer;
-        padding: 10px;
+        padding: 13px;
     }
     .textAccordion1,
     .textAccordion2,
     .textAccordion3 {
         margin-left: 1rem;
+    }
+
+    .flagCards {
+        gap: 30px;
+        padding: 0 15px;
+    }
+    .flagCards svg path, .flagCards svg rect {
+        fill: #000;
     }
 }

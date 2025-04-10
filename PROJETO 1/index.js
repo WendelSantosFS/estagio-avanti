@@ -48,7 +48,6 @@ const positionSlidesSection1 = document.getElementById("renderPositionSlides")
 
 const swiper = new Swiper(".mySwiper", {
     loop: true,
-    cssMode: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
