@@ -5,10 +5,6 @@
     font-family: "Nunito", sans-serif ;
 }
 
-:root {
-    --swiper-theme-color: #303030;
-}
-
 .textBoldBlue {
     font-weight: 700;
     color: #005cff;
@@ -31,8 +27,6 @@ a {
     max-width: 1024px;
     margin: 0 auto;
 }
-
-
 
 
 header {
@@ -491,8 +485,6 @@ nav a:hover {
 
 
 
-
-
 /*   CÓDIGO DOS CARDS EM JAVASCRIPT    */
 .cardProduct {
     display: flex;
@@ -560,8 +552,6 @@ nav a:hover {
 .swiper-pagination-bullet-active {
     background-color: #303030 !important;
 }
-
-
 
 
 
