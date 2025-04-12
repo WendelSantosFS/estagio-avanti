@@ -1,18 +1,22 @@
 const hoverAllCategories = document.getElementById("menuHamburgue")
-hoverAllCategories.addEventListener('mouseover', () =>{
-   document.getElementById('divSecondAllCategories').classList.toggle('dNone')
-})
-hoverAllCategories.addEventListener('mouseout', () =>{
-    document.getElementById('divSecondAllCategories').classList.toggle('dNone')
- })
-
-
+const allCategoriesMenu = document.getElementById('divSecondAllCategories')
 const hoverAllDepartments = document.getElementById("hoverDepartment")
-hoverAllDepartments.addEventListener('mouseover', () => {
-   document.getElementById('divDepartments').classList.toggle('dNone')
+const hoverLeaveDepatment = document.getElementById("divDepartments")
+
+hoverAllCategories.addEventListener('click', () => {
+    hoverLeaveDepatment.classList.add('dNone')
+    allCategoriesMenu.classList.toggle('dNone')
 })
-hoverAllDepartments.addEventListener('mouseout', () =>{
-    document.getElementById('divDepartments').classList.toggle('dNone')
+allCategoriesMenu.addEventListener('mouseleave', () => {
+   allCategoriesMenu.classList.add('dNone')
+})
+
+hoverAllDepartments.addEventListener('click', () => {
+    allCategoriesMenu.classList.add('dNone')
+   hoverLeaveDepatment.classList.toggle('dNone')
+})
+hoverLeaveDepatment.addEventListener('mouseleave', () => {
+    hoverLeaveDepatment.classList.add('dNone')
 })
 
 

@@ -669,10 +669,9 @@ nav a:hover {
     background-color: #f5f5f5;
     position: fixed;
     left: 13.8%;
-    border-radius: 4px;
-    font-size: 17px;
+    font-size: 15px;
     padding: 20px 10px 0 10px;
-    height: 260px;
+    height: 280px;
     box-shadow: 1px 1px 2px #000;
 }
 .divCategories {
@@ -685,21 +684,49 @@ nav a:hover {
     font-size: 15px;
     color: #656565;
 }
-.divCategories .divCat1 {
-    border-right: 7px solid #CECECE;
-    border-radius: 5px;
-    height: 170px;
-    padding-right: 9px;
+.divCategory2 p:hover {
+    cursor: pointer;
+    font-weight: 700;
+    color: #005CFF;
 }
+.divCategories .divCat1 {
+    height: 255px;
+    padding-right: 9px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.divCat1::-webkit-scrollbar {
+    width: 4px;
+}
+.divCat1::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+.divCat1::-webkit-scrollbar-thumb {
+    background: #CECECE;
+    border-radius: 10px;
+}
+  
 .childCategories {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 60px;
     color: #303030;
-    width: 180px;
+    width: 210px;
+    cursor: pointer;
+}
+.childCategories:hover p {
+    font-weight: 700;
+    color: #005cff;
+}
+.childCategories:hover svg path {
+    fill: #005CFF;
 }
 .pDepartment {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -710,11 +737,13 @@ nav a:hover {
 
 .divMainTwoComponents {
     display: flex;
-    gap: 12.3rem;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .divImgCategories {
     position: relative;
+    align-content: end;
 }
 .divImgCategories img {
     height: 230px;
@@ -729,7 +758,7 @@ nav a:hover {
 .subDivImg {
     position: absolute;
     color: #fff;
-    bottom: 30px;
+    bottom: 40px;
     left: 10px;
 }
 .subDivImg button {
@@ -751,7 +780,6 @@ nav a:hover {
 #divDepartments {
     background-color: #f5f5f5;
     box-shadow: 1px 1px 3px #000;
-    border-radius: 4px;
     height: 280px;
     width: 100%;
     padding: 1.3rem .8rem 0 0.8rem;
@@ -767,6 +795,11 @@ nav a:hover {
     color: #656565;
     font-size: 14px;
     line-height: 27px;
+}
+.divChildDepartment p:hover {
+    cursor: pointer;
+    font-weight: 700;
+    color: #005CFF;
 }
 
 .pointer {
