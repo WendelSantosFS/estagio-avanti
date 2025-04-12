@@ -183,9 +183,6 @@ renderPointers()
 
 
 const menuMobile = document.querySelector(".menuHamburguerMobile")
-menuMobile.addEventListener('mouseover', () => {
-    document.querySelector(".menuMobile").classList.toggle('dNone')
-})
-menuMobile.addEventListener('mouseout', () => {
+menuMobile.addEventListener('click', () => {
     document.querySelector(".menuMobile").classList.toggle('dNone')
 })
