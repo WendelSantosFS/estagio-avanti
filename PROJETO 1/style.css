@@ -444,6 +444,11 @@ nav a:hover {
     justify-content: center;
     gap: 1.5rem;
 }
+.flagCards .flagBoleto {
+    border: 2px solid #000;
+    border-radius: 4px;
+    width: 32px;
+}
 
 .section9 {
     margin: 50px auto;
@@ -822,6 +827,9 @@ nav a:hover {
 .textMobile {
     display: none;
 }
+.section3Mobile {
+    display: none;
+}
 
 .notificationCarMobile {
     display: none;
@@ -924,7 +932,7 @@ nav a:hover {
         top: 100px;
     }
 }
-@media (min-width: 425px) {   
+@media (min-width: 426px) {   
     .carComprasMobile {
         display: none;
     }
@@ -951,6 +959,10 @@ nav a:hover {
     }
 }
 @media (max-width: 426px) {
+    .forStyleMobile {
+        font-weight: 100;
+    }
+
     .section2-1 {
         margin: 0 6px;
     }
@@ -961,6 +973,7 @@ nav a:hover {
     }
     .pSection6 {
         text-align: center;
+        padding: 0 10px;
     }
     .headerMobile3items {
         width: 100%;
@@ -1078,20 +1091,36 @@ nav a:hover {
     .lastTextSection8 {
         border-bottom: 1px solid #DDDDDD;
     }
-
-    .textComputer {
+    .section9 .textComputer {
         display: none;
     }
-    .textMobile {
+    .section9 .section9Mobile {
+        font-size: 13px;
+        color: #303030;
+    }
+    .section9Mobile {
         display: block;
         padding: 0 14px;
     }
+
     .imgsFooter {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1.2rem;
+        gap: 2rem;
+    }
+
+    .backgroundCup1 {
+        max-width: 100%;
+    }
+    .section3FullScreen {
+        display: none;
+    }
+    .section3Mobile {
+        display: inline;
+        font-size: 16px;
+        font-weight: 400;
     }
 
     .section4Img {
@@ -1149,5 +1178,10 @@ nav a:hover {
     }
     .flagCards svg path, .flagCards svg rect {
         fill: #000;
+    }
+}
+@media (max-width: 320px) {
+    .backgroundText1 {
+        padding: 0 10px;
     }
 }
