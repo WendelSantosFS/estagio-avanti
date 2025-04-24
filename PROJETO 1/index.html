@@ -10,6 +10,9 @@
     <!--  LINK DO CSS -->
     <link rel="stylesheet" href="./style.css" />
 
+    <!-- LINK TAILWIND -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     <!-- LINK DO SWIPER-->
@@ -20,9 +23,9 @@
 <body>
     <main>
 
-        <header>
-            <p>Ganhe <span class="topHeader">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class="forStyleMobile">DESCONTO10</span></p>
-            <div class="headerLogo">
+        <header class="fixed">
+            <p class="text-center">Ganhe <span class="topHeader">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class="forStyleMobile">DESCONTO10</span></p>
+            <div class="headerLogo flex items-center justify-between flex-wrap gap-1">
                  <div class="part1Header">
                     <div class="headerMobile3items">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list menuHamburguerMobile" viewBox="0 0 16 16">
@@ -49,7 +52,7 @@
                         </div>
                     </div>
 
-                    <div class="lupaPesquisar">
+                    <div class="lupaPesquisar flex">
                         <input 
                         type="text"
                         placeholder="Digite aqui o que você procura"
@@ -61,9 +64,9 @@
                     </div>
                  </div>
 
-                <div class="part2Header">
+                <div class="part2Header flex items-end">
                     <img src="./img/imgUserBlue.png">
-                    <p>Olá,<br> Nome cliente</p>
+                    <p class="font-bold">Olá,<br> Nome cliente</p>
 
                     <div class="carrinhoCompras">
                         <img id="imgCarrinhoCompras" src="./img/carrinho-compras.png">
@@ -75,8 +78,8 @@
             <div id="resultSearch" class="containerLimitado">
             </div>
 
-            <nav class="containerLimitado navHeader">
-                <div id="menuHamburgue">
+            <nav class="containerLimitado navHeader flex items-end justify-between">
+                <div id="menuHamburgue" class="flex items-end font-bold">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                     </svg>
@@ -301,14 +304,14 @@
         </header>
         
         <section class="section1">
-            <div class="containerLimitado section1-1">
+            <div class="containerLimitado section1-1 flex items-center text-center">
                 <img class="imgSection1" src="./img/newCadeira1.png" alt="imagem de cadeira">
 
                 <div class="textSection1">
-                     <h1><span style="font-weight: bold;">SUPER</span><wbr>SALE</wbr></h1>
+                     <h1><span class="textBold">SUPER</span><wbr>SALE</wbr></h1>
                      <p class="dNone textMobileScreen">SELECTED ITEMS UP TO</p>
-                     <p class="afterh1 textFullScreen">ITENS SELECIONADOS COM ATÉ</p>
-                     <p class="afterAfterh1">50%OFF</p>
+                     <p class="afterh1  font-bold textFullScreen">ITENS SELECIONADOS COM ATÉ</p>
+                     <p class="afterAfterh1 font-bold">50%OFF</p>
                 </div>
 
                 <div id="renderPositionSlides" class="dNone"></div>
@@ -316,8 +319,8 @@
         </section>
 
         <section class="section2">
-            <div class="section2-1">
-                <h3>Lançamentos</h3>
+            <div class="section2-1 flex justify-between">
+                <h3 class="font-bold">Lançamentos</h3>
                 <a href="#">Ver mais</a>
             </div>
             
@@ -346,12 +349,12 @@
             </div>
         </section>
 
-        <section class="section3">   
+        <section class="section3 flex items-center justify-center flex-wrap">   
             <div class="backgroundCup1">
                 <img src="./img/xicara1.png" alt="">  <!---->
             </div>
 
-            <div class="backgroundText1">
+            <div class="backgroundText1 flex flex-col">
                 <h2>LOREM IPSUM</h2>
                 
                 <p class="section3Mobile">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -363,26 +366,26 @@
         </section>
 
         <section class="section4">
-            <div class=" section4Main">
-                <div class="section4Text">
-                    <h2>LOREM IPSUM</h2>
+            <div class=" section4Main flex justify-center items-center flex-wrap-reverse">
+                <div class="section4Text flex flex-col">
+                    <h2 class="text-center">LOREM IPSUM</h2>
     
-                    <div class="section4Child">
-                        <div class="imgMap">
+                    <div class="section4Child flex items-center">
+                        <div class="imgMap flex justify-center items-center">
                             <img src="./img/iconeMAP.png" alt="">  <!-- img point DE MAPA -->
                         </div>
                         <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
                     </div>
     
-                    <div class="section4Child">
-                        <div class="imgMap">
+                    <div class="section4Child flex items-center">
+                        <div class="imgMap flex justify-center items-center">
                             <img src="./img/iconeMAP.png" alt="">  <!-- img point DE MAPA -->
                         </div>
                         <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
                     </div>
                     
-                    <div class="section4Child">
-                        <div class="imgMap">
+                    <div class="section4Child flex items-center">
+                        <div class="imgMap flex justify-center items-center">
                             <img src="./img/iconeMAP.png" alt="">  <!-- img point DE MAPA -->
                         </div>
                         <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
@@ -397,12 +400,12 @@
         </section>
 
 
-        <section class="section3 section5Int">   
+        <section class="section3 flex items-center justify-center flex-wrap section5Int">   
             <div class="backgroundCup1">
                 <img src="./img/xicara1.png" alt="">  <!---->
             </div>
 
-            <div class="backgroundText1">
+            <div class="backgroundText1 flex flex-col">
                 <h2>LOREM IPSUM</h2>
                 
                 <p class="section3Mobile">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -414,8 +417,8 @@
         </section>
 
         <section class="section2 fileiraCards2">
-            <div class="section2-1">
-                <h3>Lançamentos</h3>
+            <div class="section2-1 flex justify-between">
+                <h3 class="font-bold">Lançamentos</h3>
                 <a href="#">Ver mais</a>
             </div>
             
@@ -445,21 +448,21 @@
         </section>
 
 
-        <section class="section6">
-            <p class="pSection6">Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+        <section class="section6 flex items-center">
+            <p class="pSection6 flex justify-center items-center">Entre em contato conosco e verifique a disponibilidade para sua região!</p>
         </section>
 
 
         <section class="section7 containerLimitado">
-            <p class="titleNewsLetter">Cadastre-se na nossa <span style="color: #005cff">newsletter</span></p>
+            <p class="titleNewsLetter font-bold text-center">Cadastre-se na nossa <span style="color: #005cff">newsletter</span></p>
 
-            <form class="formNewsLetter">
-                <input class="inputNewsLetter" type="text" required placeholder="Digite seu nome">
-                <input class="inputNewsLetter" type="email" required  placeholder="Digite seu e-mail">
+            <form class="formNewsLetter flex items-center justify-center">
+                <input class="inputNewsLetter bg-white" type="text" required placeholder="Digite seu nome">
+                <input class="inputNewsLetter bg-white" type="email" required  placeholder="Digite seu e-mail">
 
-                <div class="boxPoliticaPrivacidade">
+                <div class="boxPoliticaPrivacidade flex items-center justify-center">
                     <input type="checkbox" id="politicaPrivacidade">
-                    <label for="politicaPrivacidade">Estou de acordo com a <a href="">Política de Privacidade</a></label>
+                    <label for="politicaPrivacidade">Estou de acordo com a <a href="#">Política de Privacidade</a></label>
                 </div>
                 
                 <button class="btnNewsLetter" type="submit">Cadastrar</button>
@@ -467,12 +470,12 @@
         </section>
 
 
-        <section class="section8">
-            <div class="section8Main">
+        <section class="section8 flex justify-center flex-col">
+            <div class="section8Main flex justify-between items-start flex-wrap">
                 <div class="section8Child onlyLogos">
                     <img class="logoAvantiBottom" src="./img/avanti-logo-black.png" alt="Logo da Avanti">
     
-                    <div class="logosSocialMedia">
+                    <div class="logosSocialMedia flex justify-between">
                         <img class="logoInstagram" src="./img/logoIntagram.png" alt="Link para Instagram">
                         <img class="logoFacebook" src="./img/logoFacebook.png" alt="Link para Facebook">
                         <img class="logoYoutube" src="./img/logoYoutube.png" alt="Link para Youtube">
@@ -532,7 +535,7 @@
                 </div>
             </div>
 
-            <div class="flagCards containerLimitado">
+            <div class="flagCards flex flex-wrap items-center justify-center containerLimitado">
                 <svg class="flagAmex" width="28" height="19" viewBox="0 0 28 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.28261 18.8469C1.91298 18.8469 0.799698 17.7335 0.799698 16.3638V2.48303C0.799698 1.11414 1.91298 0 3.28261 0H25.0961C26.465 0 27.579 1.11414 27.579 2.48303V16.3638C27.579 17.7335 26.465 18.8469 25.0961 18.8469H3.28261ZM2.37807 2.80701V16.0398C2.37807 16.8201 3.01186 17.4536 3.79213 17.4536H24.5866C25.3659 17.4536 26.0004 16.8201 26.0004 16.0398V2.80701C26.0004 2.02771 25.3659 1.39319 24.5866 1.39319H3.79213C3.01186 1.39319 2.37807 2.02771 2.37807 2.80701ZM23.7306 12.15L22.3681 10.377L21.0045 12.15H16.6415V6.6969H21.1415L22.2321 8.33301L23.5956 6.6969H25.0951L23.0512 9.42297L25.0951 12.15H23.7306ZM17.735 11.0592H20.3241L21.5519 9.4248L20.4611 7.92444H17.735V8.87756H20.1884V9.96838H17.735V11.0592ZM14.0529 12.15V8.19714L12.5526 12.15H11.4618L9.96156 8.06042V12.15H7.64491L7.2372 10.9232H4.91884L4.50941 12.15H3.28188L5.32655 6.6969H6.8268L8.73573 11.8773V6.6969H10.6437L12.0072 10.377L13.3707 6.6969H15.1437V12.15H14.0529ZM5.32655 9.69568H6.69106L6.00868 7.78772L5.32655 9.69568Z" fill="#303030"/>
                 </svg>
@@ -579,12 +582,12 @@
         </section>
 
 
-        <footer class="section9">
-            <p class="textComputer">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <footer class="section9 flex items-center justify-center flex-col">
+            <p class="textComputer text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 
             <p class="section9Mobile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
 
-            <div class="imgsFooter">
+            <div class="imgsFooter flex items-center">
                 <img class="imgFooter1" src="./img/imgFooter1.png" alt="Patrocinador 1"> 
                 <img class="imgFooter2" src="img/imgFooter2.png" alt="Patrocinador 2">
                 <img class="imgFooter3" src="./img/imgFooter3.png" alt="Patrocinador 3">

@@ -30,7 +30,6 @@ a {
 
 
 header {
-    position: fixed;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -44,7 +43,6 @@ header > p {
     padding: .5rem 0;
     font-size: .8rem;
     color: #fff;
-    text-align: center;
 }
 .topHeader {
     background-color: #6220c1;
@@ -55,13 +53,8 @@ header > p {
     height: 25px;
 }
 .headerLogo {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 1024px;
     height: 40px;
-    gap: 1rem;
     margin: 20px auto;
 }
 .headerLogo input[type='text'] {
@@ -75,9 +68,6 @@ header > p {
 }
 .headerLogo input[type='text']::placeholder {
     color: #000;
-}
-.lupaPesquisar {
-    display: flex;
 }
 .lupaPesquisar input[type="text"] {
     border-right: none;
@@ -99,7 +89,6 @@ header > p {
 
 
 #resultSearch {
-    text-align: left;
     padding-left: 40px;
     margin-bottom: 20px;
 }
@@ -111,8 +100,6 @@ header > p {
     gap: 3rem;
 }
 .part2Header {
-    display: flex;
-    align-items: end;
     gap: .7rem;
 }
 .part2Header img {
@@ -121,7 +108,6 @@ header > p {
 }
 .part2Header p {
     font-size: 12px;
-    font-weight: bold;
     line-height: 13px;
 }
 .carrinhoCompras {
@@ -148,10 +134,7 @@ header > p {
 }
 
 #menuHamburgue {
-    display: flex;
     gap: 3px;
-    align-items: end;
-    font-weight: bold;
 }   
 #menuHamburgue:hover {
     cursor: pointer;
@@ -159,9 +142,6 @@ header > p {
 }
 
 nav {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
     font-size: 12px;
 }
 nav a:hover {
@@ -175,9 +155,6 @@ nav a:hover {
     background-color: #E7E7EA;
 }
 .section1-1 {
-    display: flex;
-    align-items: center;
-    text-align: center;
     position: relative;
 }
 .section1-1 h1 {
@@ -186,13 +163,11 @@ nav a:hover {
 }
 .section1-1 .afterh1 {
     font-size: 1.2rem;
-    font-weight: bold;
     color: #005cff;
     letter-spacing: 7px;
 }
 .afterAfterh1 {
     font-size: 2.8rem;
-    font-weight: bold;
     color: #005cff;
 }
 .imgSection1 {
@@ -205,18 +180,13 @@ nav a:hover {
     margin: 4rem auto 5rem auto;
     max-width: 1024px;
 }
-.section2-1 {
-    display: flex;
-    justify-content: space-between;
+.section2-1 h3 {
+    font-size: 20px;
 }
 
 .section3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 14px;
     gap: 2rem;
-    flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -237,8 +207,6 @@ nav a:hover {
 }
 .backgroundText1 {
     max-width: 340px;
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
 }
 
@@ -246,14 +214,11 @@ nav a:hover {
 .section4 {
     background-color: #dedede;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     margin: 35px 0;
     color: #4F4F4F;
 }
 .imgMap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #005cff;
     width: 60px;
     height: 54px;
@@ -264,18 +229,15 @@ nav a:hover {
     height: 30px;
 }
 .section4Text {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
     max-width: 330px;
     font-size: 14px;
 }
 .section4Text h2 {
-    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
 }
 .section4Child {
-    display: flex;
-    align-items: center;
     gap: 1rem;
 }
 .section4Child p {
@@ -288,10 +250,6 @@ nav a:hover {
     max-width: 100%;
 }
 .section4Main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
     gap: 2rem;
 }
 
@@ -305,8 +263,6 @@ nav a:hover {
     height: 70vh;
     width: 100%;
 
-    display: flex;
-    align-items: center;
     position: relative;
 }
 .section6::before {
@@ -321,9 +277,6 @@ nav a:hover {
 .pSection6 {
     position: relative;
     font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #005cff;
     width: 100%;
     min-height: 80px;
@@ -337,9 +290,6 @@ nav a:hover {
     min-height: 300px;
 }
 .formNewsLetter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1.1rem;
     background-color: #dedede;
     padding: 5rem 4rem;
@@ -347,8 +297,6 @@ nav a:hover {
     color: #6d6d6d;
 }
 .section7 .titleNewsLetter {
-    font-weight: bold;
-    text-align: center;
     padding-top: 2.3rem;
     padding-bottom: 1rem;
 }
@@ -361,10 +309,7 @@ nav a:hover {
 }
 
 .boxPoliticaPrivacidade {
-    display: flex;
-    align-items: center;
     gap: .3rem;
-    justify-content: center;
     font-size: 13px;
     color: #656565;
     font-weight: 700;
@@ -387,19 +332,12 @@ nav a:hover {
 .section8 {
     background-color: #f5f5f5;
     min-height: 40vh;
-    padding-bottom: 1.1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 3rem 0;
+    margin-top: 1rem;
     gap: 3rem;
 }
 .section8Main {
-    display: flex;
     gap: 1rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
     width: 100%;
     max-width: 1024px;
     margin: 1rem auto ;
@@ -452,17 +390,9 @@ nav a:hover {
     gap: 2rem;
     width: 210px;
 }
-.onlyLogos .logosSocialMedia {
-    display: flex;
-    justify-content: space-between;
-}
 
 
 .flagCards {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     gap: 1.5rem;
 }
 .flagCards .flagBoleto {
@@ -474,20 +404,13 @@ nav a:hover {
 .section9 {
     margin: 50px auto;
     max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
 }
 .section9 p {
     font-size: 11px;
-    text-align: center;
     color: #303030;
 }
 .imgsFooter {
-    display: flex;
-    align-items: center;
     gap: 1.5rem;
 }
 .section9 .imgFooter1 {
@@ -801,7 +724,6 @@ nav a:hover {
     height: 38px;
     text-shadow: 2px 2px 3px #000;
 }
-
 
 
 #divDepartments {
@@ -1182,7 +1104,6 @@ nav a:hover {
     .cardProduct {
         margin-left: 1rem;
     }
-
 
     .divAccordion {
         width: 100%;
