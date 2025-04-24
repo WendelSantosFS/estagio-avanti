@@ -143,8 +143,6 @@ renderNav()
 
 
 
-
-
 const resultSearch = document.getElementById('resultSearch')
 const btnLupa = document.getElementById('btnLupa')
 const inputSearch = document.getElementById('inputSearch')
@@ -157,7 +155,6 @@ btnLupa.addEventListener('click', () => {
     p.id = 'paragrafoSearch'
     
     if (valueInput.trim().length === 0) {
-        console.log('Pesquisa vazia')
         return;
     } else {
         p.innerHTML = `<span class="textBold">Você pesquisou por: '${valueInput}'</span>`

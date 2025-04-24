@@ -183,6 +183,11 @@ nav a:hover {
 .section2-1 h3 {
     font-size: 20px;
 }
+.linkViewMore {
+    font-weight: 700;
+    color: #303030;
+    font-size: 14px;
+}
 
 .section3 {
     font-size: 14px;
@@ -497,7 +502,6 @@ nav a:hover {
     content: '\F135';
     right: -10px;
 }
-
 /* SWIPER ACTIVE */
 .swiper-pagination-bullet-active {
     background-color: #303030 !important;
@@ -524,7 +528,7 @@ nav a:hover {
     width: 100%;
 }
 .cards .nameProduct {
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 6px;
     width: 100%;
 }
