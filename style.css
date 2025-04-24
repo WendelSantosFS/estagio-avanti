@@ -621,7 +621,6 @@ nav a:hover {
 #divSecondAllCategories {
     width: 1024px;
     background-color: #f5f5f5;
-    position: fixed;
     left: 13.8%;
     font-size: 15px;
     padding: 20px 10px 0 10px;
@@ -629,11 +628,9 @@ nav a:hover {
     box-shadow: 1px 1px 2px #000;
 }
 .divCategories {
-    display: flex;
     gap: 2rem;
 }
 .divCategory2 {
-    display: flex;
     gap: 6rem;
     font-size: 15px;
     color: #656565;
@@ -648,9 +645,6 @@ nav a:hover {
     padding-right: 9px;
     overflow-y: scroll;
     overflow-x: hidden;
-
-    display: flex;
-    flex-direction: column;
     gap: 6px;
 }
 .divCat1::-webkit-scrollbar {
@@ -665,12 +659,9 @@ nav a:hover {
 }
   
 .childCategories {
-    display: flex;
-    align-items: center;
     gap: 60px;
     color: #303030;
     width: 210px;
-    cursor: pointer;
 }
 .childCategories:hover p {
     font-weight: 700;
@@ -684,16 +675,6 @@ nav a:hover {
     font-weight: 400;
 }
 
-#divDepartments {
-    position: fixed;
-    left: 13.8%;
-}
-
-.divMainTwoComponents {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
 
 .divImgCategories {
     position: relative;
@@ -731,19 +712,14 @@ nav a:hover {
 
 
 #divDepartments {
+    left: 13.8%;
     background-color: #f5f5f5;
     box-shadow: 1px 1px 3px #000;
     height: 280px;
-    width: 100%;
     padding: 1.3rem .8rem 0 0.8rem;
-}
-.divMainDepartment {
-    display: flex;
-    justify-content: space-between;
 }
 .divChildDepartment {
     margin-top: 0.5rem;
-    display: flex;
     gap: 6rem;
     color: #656565;
     font-size: 14px;
@@ -755,6 +731,7 @@ nav a:hover {
     color: #005CFF;
 }
 
+/* POSICAO SLIDES MOBILE - SECTION 1  */
 .pointer {
     width: 9px;
     height: 9px;
@@ -767,7 +744,6 @@ nav a:hover {
 #renderPositionSlides {
     width: 45px;
     height: 30px;
-    position: absolute;
     bottom: 2px;
     left: 45%;
 }
@@ -835,10 +811,10 @@ nav a:hover {
         right: 0;
         z-index: 1;
     }
-        .textSection1 h1 {
-            font-size: 35px;
-            line-height: 40px;
-        }
+    .textSection1 h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
     .textMobileScreen {
         display: block;
         font-size: 13px;
